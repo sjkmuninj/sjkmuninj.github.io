@@ -21,29 +21,22 @@
     var CONFIG = {"hostname":"icewak.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="最近搭建了github个人主页,这里简单记录一下搭建过程,有需要的可以看下">
+  <meta name="description" content="html中使用less日常开发的时候经常有需要写一个单页面测试,但是写less习惯了之后再去写css,less中的嵌套,混入,变量,等等这些语法css是不支持的,严重影响了开发效率,这时候我们可以借助less.js来提高效率 css部分,这里要修改type为text&#x2F;less 同时加上lang&#x3D;&quot;less&quot;12345678&lt;style type&#x3D;&quot;text&#x2F;le">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建过程记录">
-<meta property="og:url" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:title" content="在html中使用less">
+<meta property="og:url" content="https://icewak.github.io/2021/07/05/%E5%9C%A8html%E4%B8%AD%E4%BD%BF%E7%94%A8less/index.html">
 <meta property="og:site_name" content="bug统计局">
-<meta property="og:description" content="最近搭建了github个人主页,这里简单记录一下搭建过程,有需要的可以看下">
+<meta property="og:description" content="html中使用less日常开发的时候经常有需要写一个单页面测试,但是写less习惯了之后再去写css,less中的嵌套,混入,变量,等等这些语法css是不支持的,严重影响了开发效率,这时候我们可以借助less.js来提高效率 css部分,这里要修改type为text&#x2F;less 同时加上lang&#x3D;&quot;less&quot;12345678&lt;style type&#x3D;&quot;text&#x2F;le">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/0.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/1.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/2.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/2.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/4.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/5.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/6.jpg">
-<meta property="og:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/7.jpg">
-<meta property="article:published_time" content="2021-06-01T03:54:52.000Z">
-<meta property="article:modified_time" content="2021-06-01T03:54:52.000Z">
+<meta property="og:image" content="https://icewak.github.io/2021/07/05/%E5%9C%A8html%E4%B8%AD%E4%BD%BF%E7%94%A8less/2021_07_05_091200.jpg">
+<meta property="article:published_time" content="2021-07-05T01:14:18.000Z">
+<meta property="article:modified_time" content="2021-07-05T01:14:18.000Z">
 <meta property="article:author" content="张三">
 <meta property="article:tag" content="其他">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/0.jpg">
+<meta name="twitter:image" content="https://icewak.github.io/2021/07/05/%E5%9C%A8html%E4%B8%AD%E4%BD%BF%E7%94%A8less/2021_07_05_091200.jpg">
 
-<link rel="canonical" href="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/">
+<link rel="canonical" href="https://icewak.github.io/2021/07/05/%E5%9C%A8html%E4%B8%AD%E4%BD%BF%E7%94%A8less/">
 
 
 <script id="page-configurations">
@@ -56,7 +49,7 @@
   };
 </script>
 
-  <title>搭建过程记录 | bug统计局</title>
+  <title>在html中使用less | bug统计局</title>
   
 
 
@@ -192,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://icewak.github.io/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/">
+    <link itemprop="mainEntityOfPage" href="https://icewak.github.io/2021/07/05/%E5%9C%A8html%E4%B8%AD%E4%BD%BF%E7%94%A8less/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          搭建过程记录
+          在html中使用less
         </h1>
 
         <div class="post-meta">
@@ -215,7 +208,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021年06月01 11:54:52" itemprop="dateCreated datePublished" datetime="2021-06-01T11:54:52+08:00">2021年06月01</time>
+              <time title="创建时间：2021年07月05 09:14:18" itemprop="dateCreated datePublished" datetime="2021-07-05T09:14:18+08:00">2021年07月05</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,7 +220,7 @@
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
                 </span>
             </span>
 
@@ -242,31 +235,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>最近搭建了github个人主页,这里简单记录一下搭建过程,有需要的可以看下</p>
-<span id="more"></span>
+        <h3 id="html中使用less"><a href="#html中使用less" class="headerlink" title="html中使用less"></a>html中使用less</h3><p>日常开发的时候经常有需要写一个单页面测试,但是写less习惯了之后再去写css,less中的嵌套,混入,变量,等等这些语法css是不支持的,严重影响了开发效率,这时候我们可以借助<code>less.js</code>来提高效率</p>
+<h4 id="css部分-这里要修改type为text-less-同时加上lang-quot-less-quot"><a href="#css部分-这里要修改type为text-less-同时加上lang-quot-less-quot" class="headerlink" title="css部分,这里要修改type为text/less 同时加上lang=&quot;less&quot;"></a>css部分,这里要修改type为<code>text/less</code> 同时加上<code>lang=&quot;less&quot;</code></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/less&quot; lang=&quot;less&quot;&gt;</span><br><span class="line">	<span class="selector-class">.test</span>&#123;</span><br><span class="line">		<span class="attribute">background-color</span>:<span class="number">#f00</span>;</span><br><span class="line">		<span class="selector-class">.item</span>&#123;</span><br><span class="line">			<span class="attribute">color</span>:blue;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="0-打开github"><a href="#0-打开github" class="headerlink" title="0.打开github"></a>0.打开github</h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/0.jpg" class="">
+<h4 id="less-js引入"><a href="#less-js引入" class="headerlink" title="less.js引入"></a>less.js引入</h4><span id="more"></span>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入less编译包,资源来自于bootstrap的cdn --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/less.js/4.1.1/less.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/less.js/4.1.1/less.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>tip:这里引入js包一定要放在style标签下面,否则会出现不能编译的问题</p>
+</blockquote>
+<h4 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>在html中使用less<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/less&quot;</span> <span class="attr">lang</span>=<span class="string">&quot;less&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">	<span class="selector-class">.test</span>&#123;</span></span><br><span class="line"><span class="css">		<span class="attribute">background-color</span>:<span class="number">#f00</span>;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.item</span>&#123;</span></span><br><span class="line"><span class="css">			<span class="attribute">color</span>:blue;</span></span><br><span class="line"><span class="css">		&#125;</span></span><br><span class="line"><span class="css">	&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;test&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>hello world<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/less.js/4.1.1/less.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="1-首先登录你的github-如果没有就去注册一个-建议选个简单一点的名称-不要像我一样瞎写一个-不好记写不好写-看着也不帅"><a href="#1-首先登录你的github-如果没有就去注册一个-建议选个简单一点的名称-不要像我一样瞎写一个-不好记写不好写-看着也不帅" class="headerlink" title="1.首先登录你的github,如果没有就去注册一个,建议选个简单一点的名称,不要像我一样瞎写一个,不好记写不好写,看着也不帅"></a>1.首先登录你的github,如果没有就去注册一个,建议选个简单一点的名称,不要像我一样瞎写一个,不好记写不好写,看着也不帅</h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/1.jpg" class="">
+<h4 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h4><img src="/2021/07/05/%E5%9C%A8html%E4%B8%AD%E4%BD%BF%E7%94%A8less/2021_07_05_091200.jpg" class="">
 
-
-<h3 id="2-新建一个仓库-个人主页左侧有一个New-没找到就点我-穿越-过去-可以直接创建-仓库名为-登录名-github-io-如果不知道登录名是什么-看下前面的那个下拉框-那个就是你的登录名-和那个单词保持一致-剩下的内容默认就行"><a href="#2-新建一个仓库-个人主页左侧有一个New-没找到就点我-穿越-过去-可以直接创建-仓库名为-登录名-github-io-如果不知道登录名是什么-看下前面的那个下拉框-那个就是你的登录名-和那个单词保持一致-剩下的内容默认就行" class="headerlink" title="2.新建一个仓库,个人主页左侧有一个New,没找到就点我 穿越 过去,可以直接创建,仓库名为 (登录名.github.io) 如果不知道登录名是什么,看下前面的那个下拉框,那个就是你的登录名,和那个单词保持一致,剩下的内容默认就行"></a>2.新建一个仓库,个人主页左侧有一个<code>New</code>,没找到就点我 <a href="https://github.com/new">穿越</a> 过去,可以直接创建,仓库名为 (<code>登录名.github.io</code>) 如果不知道登录名是什么,看下前面的那个下拉框,那个就是你的登录名,和那个单词保持一致,剩下的内容默认就行</h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/2.jpg" class="">
-
-<h3 id="3-创建完成之后-打开Setting"><a href="#3-创建完成之后-打开Setting" class="headerlink" title="3.创建完成之后,打开Setting"></a>3.创建完成之后,打开<code>Setting</code></h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/2.jpg" class="">
-
-<h3 id="4-找到github-Page进去"><a href="#4-找到github-Page进去" class="headerlink" title="4.找到github Page进去"></a>4.找到<code>github Page</code>进去</h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/4.jpg" class="">
-
-<h3 id="5-选择主题"><a href="#5-选择主题" class="headerlink" title="5.选择主题"></a>5.选择主题</h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/5.jpg" class="">
-
-<img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/6.jpg" class="">
-
-
-<h3 id="6-提交生效"><a href="#6-提交生效" class="headerlink" title="6.提交生效"></a>6.提交生效</h3><img src="/2021/06/01/%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/7.jpg" class="">
-
-<h3 id="7-访问你的github主页吧"><a href="#7-访问你的github主页吧" class="headerlink" title="7.访问你的github主页吧"></a>7.访问你的github主页吧</h3><p>这个是可以自己定义的,你可以创建自己的index.html</p>
-<h3 id="下次介绍一下hexo的使用过程就可以搭建漂亮的博客啦"><a href="#下次介绍一下hexo的使用过程就可以搭建漂亮的博客啦" class="headerlink" title="下次介绍一下hexo的使用过程就可以搭建漂亮的博客啦~"></a>下次介绍一下hexo的使用过程就可以搭建漂亮的博客啦~</h3>
     </div>
 
     
@@ -302,10 +285,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2021/06/16/js%E7%94%9F%E6%88%90%E5%A7%93%E5%90%8D%E6%89%8B%E6%9C%BA%E5%8F%B7%E5%A4%B4%E5%83%8F/" rel="next" title="js随机生成姓名,手机号,头像">
-      js随机生成姓名,手机号,头像 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/06/16/hexo%E5%8F%91%E5%B8%83%E6%A0%B7%E5%BC%8F%E4%B8%A2%E5%A4%B1/" rel="prev" title="hexo发布样式丢失">
+      <i class="fa fa-chevron-left"></i> hexo发布样式丢失
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/07/08/css%E6%9D%83%E9%87%8D/" rel="next" title="你不知道的css权重">
+      你不知道的css权重 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -365,7 +351,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-%E6%89%93%E5%BC%80github"><span class="nav-number">1.</span> <span class="nav-text">0.打开github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E9%A6%96%E5%85%88%E7%99%BB%E5%BD%95%E4%BD%A0%E7%9A%84github-%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%B0%B1%E5%8E%BB%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA-%E5%BB%BA%E8%AE%AE%E9%80%89%E4%B8%AA%E7%AE%80%E5%8D%95%E4%B8%80%E7%82%B9%E7%9A%84%E5%90%8D%E7%A7%B0-%E4%B8%8D%E8%A6%81%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9E%8E%E5%86%99%E4%B8%80%E4%B8%AA-%E4%B8%8D%E5%A5%BD%E8%AE%B0%E5%86%99%E4%B8%8D%E5%A5%BD%E5%86%99-%E7%9C%8B%E7%9D%80%E4%B9%9F%E4%B8%8D%E5%B8%85"><span class="nav-number">2.</span> <span class="nav-text">1.首先登录你的github,如果没有就去注册一个,建议选个简单一点的名称,不要像我一样瞎写一个,不好记写不好写,看着也不帅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%B7%A6%E4%BE%A7%E6%9C%89%E4%B8%80%E4%B8%AANew-%E6%B2%A1%E6%89%BE%E5%88%B0%E5%B0%B1%E7%82%B9%E6%88%91-%E7%A9%BF%E8%B6%8A-%E8%BF%87%E5%8E%BB-%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%88%9B%E5%BB%BA-%E4%BB%93%E5%BA%93%E5%90%8D%E4%B8%BA-%E7%99%BB%E5%BD%95%E5%90%8D-github-io-%E5%A6%82%E6%9E%9C%E4%B8%8D%E7%9F%A5%E9%81%93%E7%99%BB%E5%BD%95%E5%90%8D%E6%98%AF%E4%BB%80%E4%B9%88-%E7%9C%8B%E4%B8%8B%E5%89%8D%E9%9D%A2%E7%9A%84%E9%82%A3%E4%B8%AA%E4%B8%8B%E6%8B%89%E6%A1%86-%E9%82%A3%E4%B8%AA%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E7%99%BB%E5%BD%95%E5%90%8D-%E5%92%8C%E9%82%A3%E4%B8%AA%E5%8D%95%E8%AF%8D%E4%BF%9D%E6%8C%81%E4%B8%80%E8%87%B4-%E5%89%A9%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E9%BB%98%E8%AE%A4%E5%B0%B1%E8%A1%8C"><span class="nav-number">3.</span> <span class="nav-text">2.新建一个仓库,个人主页左侧有一个New,没找到就点我 穿越 过去,可以直接创建,仓库名为 (登录名.github.io) 如果不知道登录名是什么,看下前面的那个下拉框,那个就是你的登录名,和那个单词保持一致,剩下的内容默认就行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BA%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E-%E6%89%93%E5%BC%80Setting"><span class="nav-number">4.</span> <span class="nav-text">3.创建完成之后,打开Setting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%89%BE%E5%88%B0github-Page%E8%BF%9B%E5%8E%BB"><span class="nav-number">5.</span> <span class="nav-text">4.找到github Page进去</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98"><span class="nav-number">6.</span> <span class="nav-text">5.选择主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E6%8F%90%E4%BA%A4%E7%94%9F%E6%95%88"><span class="nav-number">7.</span> <span class="nav-text">6.提交生效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E8%AE%BF%E9%97%AE%E4%BD%A0%E7%9A%84github%E4%B8%BB%E9%A1%B5%E5%90%A7"><span class="nav-number">8.</span> <span class="nav-text">7.访问你的github主页吧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E6%AC%A1%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8Bhexo%E7%9A%84%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E5%B0%B1%E5%8F%AF%E4%BB%A5%E6%90%AD%E5%BB%BA%E6%BC%82%E4%BA%AE%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%95%A6"><span class="nav-number">9.</span> <span class="nav-text">下次介绍一下hexo的使用过程就可以搭建漂亮的博客啦~</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#html%E4%B8%AD%E4%BD%BF%E7%94%A8less"><span class="nav-number">1.</span> <span class="nav-text">html中使用less</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#css%E9%83%A8%E5%88%86-%E8%BF%99%E9%87%8C%E8%A6%81%E4%BF%AE%E6%94%B9type%E4%B8%BAtext-less-%E5%90%8C%E6%97%B6%E5%8A%A0%E4%B8%8Alang-quot-less-quot"><span class="nav-number">1.1.</span> <span class="nav-text">css部分,这里要修改type为text&#x2F;less 同时加上lang&#x3D;&quot;less&quot;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-js%E5%BC%95%E5%85%A5"><span class="nav-number">1.2.</span> <span class="nav-text">less.js引入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">完整代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">1.4.</span> <span class="nav-text">运行结果</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
