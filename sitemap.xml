@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://icewak.github.io/2024/01/05/idea%E4%B8%AD%E4%BD%BF%E7%94%A8sftp/</loc>
+    
+    <lastmod>2024-01-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://icewak.github.io/2024/01/04/sftp%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2024-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://icewak.github.io/2023/05/24/iPhone%E6%B7%BB%E5%8A%A0qq%E9%82%AE%E7%AE%B1/</loc>
+    
+    <lastmod>2023-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://icewak.github.io/2023/05/24/js%E7%94%9F%E6%88%90%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7/</loc>
     
     <lastmod>2023-05-24</lastmod>
@@ -103,7 +130,7 @@
 
   <url>
     <loc>https://icewak.github.io/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,21 +138,21 @@
   
   <url>
     <loc>https://icewak.github.io/tags/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://icewak.github.io/tags/CSS/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://icewak.github.io/tags/JavaScript/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -134,35 +161,35 @@
   
   <url>
     <loc>https://icewak.github.io/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://icewak.github.io/categories/%E5%89%8D%E7%AB%AF/JavaScript/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://icewak.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://icewak.github.io/categories/%E5%89%8D%E7%AB%AF/CSS/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://icewak.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <lastmod>2024-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
